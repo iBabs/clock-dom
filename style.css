@@ -1,0 +1,129 @@
+#count {
+    text-align: center;
+    margin: 5rem;
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mage {
+    height: 400px;
+    width: 200px;
+    background-size: contain;
+    background-position: center;
+    background-image: url('bulb.jpeg');
+    background-repeat: no-repeat;
+}
+
+.date {
+    font-size: xx-large;
+    font-weight: 600;
+
+}
+
+.clock {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    border: solid 2px black;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.nums {
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+
+.nums1 {
+    transform: rotate(30deg);
+}
+
+.nums2 {
+    transform: rotate(60deg);
+}
+
+.nums3 {
+    transform: rotate(90deg);
+}
+
+.nums4 {
+    transform: rotate(120deg);
+}
+
+.nums5 {
+    transform: rotate(150deg);
+}
+
+.nums6 {
+    transform: rotate(180deg);
+}
+
+.nums7 {
+    transform: rotate(210deg);
+}
+
+.nums8 {
+    transform: rotate(240deg);
+}
+
+.nums9 {
+    transform: rotate(270deg);
+}
+
+.nums10 {
+    transform: rotate(300deg);
+}
+
+.nums11 {
+    transform: rotate(330deg);
+}
+
+.hands {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    height: 40%;
+    width: 3px;
+    background-color: black;
+    transform-origin: bottom;
+    border-radius: 2px 2px 0 0;
+}
+
+/* seconds hand */
+.hand1 {
+    --rotate:0;
+    transform: rotate(var(--rotate, 0deg));
+    background-color: red;
+    width: 2px;
+    margin: 1px;
+    height: 48%;
+    z-index: 10;
+}
+
+/* minutes hand */
+.hand2 {
+    --rotate:0;
+    transform: rotate(var(--rotate));;
+    height: 43%;
+    width: 3px;
+    margin: 1px;
+
+}
+
+/* hours */
+.hand3 {
+    --rotate:0;
+    transform: rotate(var(--rotate, 0deg));
+    height: 40%;
+    width: 4px;
+    margin: 1px;
+
+}
